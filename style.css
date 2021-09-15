@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    text-align: center;
+    margin-top: 400px;
+}
+
+
+.panel {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.panel:hover {
+    border: 3px solid white;
+}
+
+.bottom-left-panel {
+    background-color: red;
+    border-bottom-left-radius: 200px;
+    
+}
+
+.bottom-right-panel {
+    background-color: blue;
+    border-bottom-right-radius: 200px;
+    
+}
+.top-left-panel {
+    background-color: green;
+    border-top-left-radius: 200px;
+    
+}
+.top-right-panel {
+    background-color: yellow;
+    border-top-right-radius: 200px;
+    
+}
+
+.active {
+    background-color: white;
+}
+
+
+
+.center {
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: black;
+    top: 500px;
+    left: 1180px;
+}
