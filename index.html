@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+
+    <audio id = "sound1" >
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source>
+    </audio>
+    
+    <audio id = "sound2" >
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source>
+    </audio>
+
+    <audio id = "sound3" >
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source>
+    </audio>
+
+    <audio id = "sound4" >
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source>
+    </audio>
 </head>
 <body>
     <div>
@@ -17,27 +33,11 @@
         <div onClick="panelClicked(event.currentTarget)" class="panel bottom-right-panel"></div>
 
     </div>
-    <div class="center"></div>
+    <div class="center">
+    <h1 style = "color: white; margin-top: 75px";>Simon Says!</h1>
+  </div>
 
-
-    <div class="hidden">
-        <audio
-          src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"
-          data-sound="red"
-        ></audio>
-        <audio
-          src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"
-          data-sound="green"
-        ></audio>
-        <audio
-          src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"
-          data-sound="blue"
-        ></audio>
-        <audio
-          src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"
-          data-sound="yellow"
-        ></audio>
-      </div>
+    
 
     <script src="index.js"></script>
 </body>

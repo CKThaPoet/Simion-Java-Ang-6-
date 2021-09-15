@@ -3,6 +3,8 @@ const topRight = document.querySelector('.top-right-panel');
 const bottomLeft = document.querySelector('.bottom-left-panel');
 const bottomRight = document.querySelector('.bottom-right-panel');
 
+let noise = true;
+
 
 const randomPanel = () => {
 
