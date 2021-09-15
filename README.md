@@ -1,2 +1,3 @@
 # Simion-Java-Ang-6-
 This is a Simon Says game 
+The team members consist of Micheal Carson, Rodrigo Arroyo, P
