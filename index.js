@@ -33,10 +33,18 @@ const flash = panel => {
                 resolve();
             }, 250); //this timeout is for color duplicates, so for example if we have red, green, green, 
                      //without this timeout the green will just stay white for awhile, with this time out, it will flash from green back to green
-           
+
+                     //trying to add when the game plays it will play the function that has the sound
+                     if (panel[flash] == topLeft) one();
+                     if (panel[flash] == topRight) two();
+                     if (panel[flash] == bottomLeft) three();
+                     if (panel[flash] == bottomRight) four();
+                     //flash++;
+
         }, 750); //this timeout is between each color, the smaller the number the faster it flashes between colors and vice versa
     });
 };
+
 
 
 let canClick = false; //this is so the user cannot click until the buttons stop flashing
@@ -74,3 +82,41 @@ const main = async () => {
 };
 
 startFlashing();
+
+
+//this the fucntions that will play the sounds I just need to fit them in the function that plays the game
+function one() {
+    if (noise) {
+      let audio = document.getElementById("sound1");
+      audio.play();
+    }
+    noise = true;
+    topLeft.style.backgroundColor = "lightgreen";
+  }
+  
+  function two() {
+    if (noise) {
+      let audio = document.getElementById("sound2");
+      audio.play();
+    }
+    noise = true;
+    topRight.style.backgroundColor = "yellow" ;
+  }
+  
+  function three() {
+    if (noise) {
+      let audio = document.getElementById("sound3");
+      audio.play();
+    }
+    noise = true;
+    bottomLeft.style.backgroundColor = "tomato";
+  }
+  
+  function four() {
+    if (noise) {
+      let audio = document.getElementById("sound4");
+      audio.play();
+    }
+    noise = true;
+    bottomRight.style.backgroundColor = "lightskyblue";
+  }
