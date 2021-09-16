@@ -1,41 +1,50 @@
 body {
     background-color: black;
     text-align: center;
-    margin-top: 400px;
+    margin-top: 200px;
 }
 
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
 
 .panel {
     width: 200px;
     height: 200px;
     display: inline-block;
     cursor: pointer;
+    border: 3px solid black;
 }
 
 .panel:hover {
     border: 3px solid white;
+    opacity: .50;
 }
 
 .bottom-left-panel {
     background-color: red;
     border-bottom-left-radius: 200px;
-    
+
 }
 
 .bottom-right-panel {
     background-color: blue;
     border-bottom-right-radius: 200px;
-    
+
 }
 .top-left-panel {
     background-color: green;
     border-top-left-radius: 200px;
-    
+
 }
 .top-right-panel {
     background-color: yellow;
     border-top-right-radius: 200px;
-    
+
 }
 
 .active {
@@ -51,7 +60,6 @@ body {
     height: 200px;
     border-radius: 100%;
     background-color: black;
-    top: 500px;
-    left: 1180px;
+    top: 43%;
+    left: 45%;
 }
-
